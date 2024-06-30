@@ -4,11 +4,9 @@ import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 import java.util.TimeZone;
 
-
-// Mongo aktif etmek icin
+// Mongo aktif etmek ici
 // @EnableMongoRepositories
 
 // Aspect aktif etmek icin
@@ -30,8 +28,8 @@ import java.util.TimeZone;
 // Spring Security: Şimdilik dahil etme ancak Spring security için gerekli kütüphaneleri dahil
 @SpringBootApplication(exclude = {
 		//SecurityAutoConfiguration.class,
-		//org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
-		//org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class
+		org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
+		org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class
 }
 )
 // @SpringBootApplication
@@ -66,5 +64,6 @@ public class SeniorFullStack1Application {
 
 		// Main
 		SpringApplication.run(SeniorFullStack1Application.class, args);
-	}
-}
+	} // end PSVM
+
+} // end class
