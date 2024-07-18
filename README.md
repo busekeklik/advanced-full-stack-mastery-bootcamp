@@ -279,7 +279,7 @@ docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger
 [FRONTEND]: <https://github.com/denemed>
 [BACKEND]: <https://github.com/denemed>
 
-[hm]: <https://github.com/hamitmizrak>
+[hm]: <https://github.com/busekeklik>
 [markdown-it]: <https://github.com/markdown-it/markdown-it>
 [Ace Editor]: <http://ace.ajax.org>
 [node.js]: <http://nodejs.org>

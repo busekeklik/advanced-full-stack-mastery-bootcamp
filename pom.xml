@@ -12,7 +12,7 @@
     </parent>
 
     <!--for project information-->
-    <groupId>com.hamitmizrak</groupId>
+    <groupId>com.busekeklik</groupId>
     <artifactId>SeniorFullStack1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SeniorFullStack1</name>
