@@ -43,6 +43,7 @@ public class BlogCategoryServicesImpl implements IBlogCategoriesServices<BlogCat
     /////////////////////////////////////////////////////////////
     // SPEED DATA
     @Override
+    @Transactional
     public String blogCategoryServiceSpeedData(Integer data) {
         if(data!=null){
             for (int i = 0; i <=data ; i++) {
