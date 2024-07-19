@@ -3,6 +3,7 @@ package com.busekeklik.seniorfullstack1;
 import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.TimeZone;
 
@@ -16,14 +17,14 @@ import java.util.TimeZone;
 // @EnableAsync
 
 // SCAN
-// @EntityScan(basePackages = "com.busekeklik.data.entity") //Entity bulamadığı zaman
-// @EnableJpaRepositories(basePackages = "com.busekeklik.data.repository") //Repository bulamadığı zaman
+// @EntityScan(basePackages = "com.hamitmizrak.data.entity") //Entity bulamadığı zaman
+// @EnableJpaRepositories(basePackages = "com.hamitmizrak.data.repository") //Repository bulamadığı zaman
 
 // Spring Cache aktif etmek gerekiyor.
 // @EnableCaching
 
 // Auditing Aktif etmek
-// @EnableJpaAuditing(auditorAwareRef = "auditorAwareBeanMethod")
+@EnableJpaAuditing(auditorAwareRef = "auditorAwareBeanMethod")
 
 // Spring Security: Şimdilik dahil etme ancak Spring security için gerekli kütüphaneleri dahil
 @SpringBootApplication(exclude = {
@@ -36,7 +37,6 @@ import java.util.TimeZone;
 //public class FullStackDeveloper12Application {
 
 // Apache Tomcat için: extends SpringBootServletInitializer
-
 
 //@SpringBootApplication
 public class SeniorFullStack1Application {

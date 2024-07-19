@@ -1,6 +1,7 @@
 package com.busekeklik.seniorfullstack1.data.entity;
 
 import com.busekeklik.seniorfullstack1.annotation.AUniqueBlogCategoryName;
+import com.busekeklik.seniorfullstack1.audit.AuditingAwareBaseDto;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
@@ -26,7 +27,7 @@ import java.util.Date;
 @Table(name="blogCategories")
 
 // BlogCategoryDto(1)- BlogDto(N)
-public class BlogCategoryEntity implements Serializable {
+public class BlogCategoryEntity extends AuditingAwareBaseDto implements Serializable {
 
     // Serileştirme
     public static final Long serialVersionUID=1L;
