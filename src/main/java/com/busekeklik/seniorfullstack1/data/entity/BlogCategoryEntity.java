@@ -35,7 +35,7 @@ public class BlogCategoryEntity extends AuditingAwareBaseDto implements Serializ
     // ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "category_id",unique=true, nullable=false, updatable=false,insertable = true)
+    @Column(name = "blog_category_id",unique=true, nullable=false, updatable=false,insertable = true)
     private Long categoryID;
 
     // DATE

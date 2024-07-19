@@ -75,7 +75,7 @@ public class BlogCategoryServicesImpl implements IBlogCategoriesServices<BlogCat
         if(blogCategoryDto!=null){
             BlogCategoryEntity blogCategoryEntity=dtoToEntity(blogCategoryDto);
             IBlogCategoryRepository.save(blogCategoryEntity);
-            blogCategoryDto.setCategoryID(blogCategoryEntity.getCategoryID());
+            blogCategoryDto.setBlogCategoryID(blogCategoryEntity.getCategoryID());
             blogCategoryDto.setCategoryName(blogCategoryEntity.getCategoryName());
             return blogCategoryDto;
         }else{
