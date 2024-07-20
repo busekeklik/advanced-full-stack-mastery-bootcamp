@@ -4,7 +4,7 @@ import com.busekeklik.seniorfullstack1.business.dto.BlogCategoryDto;
 import com.busekeklik.seniorfullstack1.business.services.IBlogCategoriesServices;
 import com.busekeklik.seniorfullstack1.controller.api.IBlogCategoriesApi;
 import com.busekeklik.seniorfullstack1.error.ApiResult;
-import com.busekeklik.seniorfullstack1.utils.frontend.React;
+import com.busekeklik.seniorfullstack1.utils.frontend.ReactFrontend;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -21,7 +21,7 @@ import java.util.List;
 // API
 @RestController
 //@CrossOrigin
-@CrossOrigin(origins = React.REACT_FRONTEND_PORT_URL) // http://localhost:3000
+@CrossOrigin(origins = ReactFrontend.REACT_FRONTEND_PORT_URL) // http://localhost:3000
 @RequestMapping("/blog/categories/api/v1")
 public class BlogCategoriesApiImpl implements IBlogCategoriesApi<BlogCategoryDto> {
 
